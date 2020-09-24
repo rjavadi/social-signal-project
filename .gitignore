@@ -1,0 +1,9 @@
+processed_data_csv
+*_csv*
+*.zip
+data
+ffmpeg*
+.vscode
+__pycache__
+A3
+ipynb_checkpoints
