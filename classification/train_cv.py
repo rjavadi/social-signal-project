@@ -100,10 +100,11 @@ batch_size = 32
 epochs = 100
 
 
-data_path = './processed_data_csv/all_videos.csv'
+data_path = '../all_videos.csv'
 df = pd.read_csv(data_path)
 kfold = KFold(5, True, 1)
-
+target_culture = 'Persian'
+df = df[(df['culture'] == target_culture)]
 # SPLITTING HELD-OUT DATA
 videos = df['filename'].unique()
 test_videos = pd.Series(videos).sample(frac=0.10)
