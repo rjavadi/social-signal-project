@@ -5,11 +5,12 @@ import pandas as pd
 import numpy as np
 from torch.utils.data import TensorDataset, DataLoader
 from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
 from numpy import vstack
 from network import ContemptNet
 from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt
+import seaborn as sn
 
 
 le = LabelEncoder()
@@ -100,14 +101,14 @@ batch_size = 32
 epochs = 100
 
 
-data_path = '../all_videos.csv'
+data_path = '../videos_relabelled.csv'
 df = pd.read_csv(data_path)
 kfold = KFold(5, True, 1)
-target_culture = 'Persian'
-df = df[(df['culture'] == target_culture)]
+# target_culture = 'Persian'
+# df = df[(df['culture'] == target_culture)]
 # SPLITTING HELD-OUT DATA
 videos = df['filename'].unique()
-test_videos = pd.Series(videos).sample(frac=0.10)
+test_videos = pd.Series(videos).sample(frac=0.20)
 
 # videos must be array to be subscriptable by a list
 videos = np.array(list(set(videos) - set(test_videos)))
@@ -169,10 +170,20 @@ for (i, (train, test)) in enumerate(splits):
     test_df['predicted'] = le.inverse_transform(Yhat)
     print(test_df.sample(n=20))
     test_acc = accuracy_score(le.fit_transform(test_df['emotion'].values), Yhat)
+    cf_matrix = confusion_matrix(le.fit_transform(test_df['emotion'].values), Yhat)
+    print('********Confusion Matrix*********\n', cf_matrix)
+    df_cm = pd.DataFrame(cf_matrix/np.sum(cf_matrix), index=le.inverse_transform([0,1,2]), columns=le.inverse_transform([0,1,2]))
+    plt.figure(figsize=(10,7))
+    sn.heatmap(df_cm, annot=True, fmt='.2%')
+    plt.show()
+    
+    misclassified_test_df = test_df[test_df.predicted != test_df.emotion]
     test_f1 = f1_score(le.fit_transform(test_df['emotion'].values), Yhat, average='macro')
     kfold_test_acc.append(test_acc)
     print('Test accuracy: %.3f' % (test_acc))
     print('Test F1-Score: %.3f' % (test_f1))
 
+
+test_df.to_csv('test_result.csv')
 print('Average Test Accuracy on 5-Fold CV: %.3f' % (np.mean(kfold_test_acc)))
 print('Average Validation Accuracy on 5-Fold CV: %.3f' % (np.mean(kfold_valid_acc)))
