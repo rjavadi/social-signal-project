@@ -1,3 +1,4 @@
+from matplotlib.pyplot import xlabel, ylabel
 from sklearn import svm
 import pandas as pd
 import numpy as np
@@ -31,7 +32,7 @@ def main():
 
 	#extracting total set for training and testing sets 
 	# training and testing on only NA and Persian culture
-	df = df[(df['culture']  == 'North America') | (df['culture']  == 'Persian')] 
+	df = df[(df['culture']  == 'North America') | (df['culture']  == 'Philippines')] 
 	# training and testing on only NA and Philippines culture
 	#df = df[(df['culture']  == 'North America') | (df['culture']  == 'Philippines')] 
 
@@ -49,6 +50,7 @@ def main():
 	kfold = KFold(5, True, 1)
 	videos = df['filename'].unique()
 	print(videos)
+	##  Roya: Add label encoder to convert labels to integer
 	le = LabelEncoder()
 	#this part is for extracting what to test on
 	#this is testing set for NA culture
@@ -64,7 +66,8 @@ def main():
 	#test_df = df[df['culture'] == 'Philippines']
 
 	#this is for testing on all of Persian culture
-	test_df = df[df['culture'] == 'Persian']
+	## Roya: add a test dataframe for displaying results
+	test_df = df[df['culture'] == 'Philippines']
 
 
 	test_videos = test_df['filename'].unique()
@@ -78,33 +81,41 @@ def main():
 		# test_df = df[df['filename'].isin(videos[test])]
 		y = train_df['emotion'].values
 		X = train_df.drop(columns = ['success','confidence', 'face_id','frame','emotion', 'culture','filename']).values
+		## Change labels to int using a label encoder
 		Y = le.fit_transform(y)
 
 		X_train, X_valid, y_train, y_valid = train_test_split(X, Y)
 
 		#print(X_train)
-		le.classes_
+		print('LABEL ENCODER CLASSES: ', le.classes_)
 		clf, score, fscore = create_svm(X_train, X_valid, y_train, y_valid)
 		validation_array.append(score)
 		vf_score.append(fscore)
 		#cv_scores = cross_validate(clf, X, y, cv = 10)
 		#print(cv_scores)
-		print(test_df[['frame','filename','culture','emotion']].head())
+		# print(test_df[['frame','filename','culture','emotion']].head())
 
 		int_test = test_df.drop(columns = ['success','confidence', 'face_id','frame','emotion', 'culture','filename']).values
-		print(len(int_test))
+		# print(len(int_test))
+		## Roya: change string labels to integer values
 		int_predict = le.fit_transform(test_df['emotion'].values) 
-		print(len(int_predict))
+		# print(len(int_predict))
 		# predictions = clf.predict(int_test)
-		predictions = clf.predict(int_test) #integers
+		predictions = clf.predict(int_test) #integers predicted
+		## Roya: change integer labels to string values
 		test_df['predicted'] = le.inverse_transform(predictions)
+		## Roya: calculate confusion matrix
 		cf_matrix = confusion_matrix(test_df['emotion'].values, test_df['predicted'].values)
+		print('CONFUSION MATRIX:\n', cf_matrix)
 		df_cm = pd.DataFrame(cf_matrix/np.sum(cf_matrix), index=le.inverse_transform([0,1,2]), columns=le.inverse_transform([0,1,2]))
-		plt.figure(figsize=(10,7))
-		sn.heatmap(df_cm, annot=True, fmt='.2%')
+		## Plot Confusion matrix
+		plt.figure(figsize=(9,6))
+		sn.heatmap(df_cm, annot=True,  fmt='.2%')
+		plt.ylabel('True label')
+		plt.xlabel('Predicted label')
 		plt.show()
-		print("predictions: ", predictions[0:10])
-		print("int_predict: ", int_predict[0:10])
+		# print("predictions: ", predictions[0:10])
+		# print("int_predict: ", int_predict[0:10])
 		print(accuracy_score(int_predict, predictions))
 		fscore = f1_score(le.fit_transform(int_predict), predictions, average = 'macro')
 		test_df.drop(columns=['predicted'], inplace=True)
