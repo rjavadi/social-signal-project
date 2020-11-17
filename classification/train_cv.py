@@ -86,8 +86,9 @@ def get_dataloaders(df, batch_size):
     Y = df[['emotion']].values
 
         
-    X = df.drop(['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success'], axis=1)
+    X = df.drop(['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success', 'gender', 'talking'], axis=1)
     Y = le.fit_transform(Y)
+    print(le.classes_)
     Y_tensor = torch.tensor(Y, dtype=torch.long)
     X_tensor = torch.tensor(X.values, dtype=torch.float32)
     
@@ -103,6 +104,7 @@ epochs = 100
 
 data_path = '../videos_relabelled.csv'
 df = pd.read_csv(data_path)
+df = df[df['gender'] == 'male']
 kfold = KFold(5, True, 1)
 # target_culture = 'Persian'
 # df = df[(df['culture'] == target_culture)]
@@ -120,8 +122,10 @@ splits = kfold.split(videos)
 kfold_valid_acc = []
 kfold_test_acc = []
 
+
+
 # TRAINING
-test_df_copy = test_df.drop(['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success'], axis=1)
+test_df_copy = test_df.drop(['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success', 'gender', 'talking'], axis=1)
 for (i, (train, test)) in enumerate(splits):
     print('%d-th split: train: %d, test: %d' % (i+1, len(videos[train]), len(videos[test])))
     train_df = df[df['filename'].isin(videos[train])]
@@ -175,8 +179,9 @@ for (i, (train, test)) in enumerate(splits):
     df_cm = pd.DataFrame(cf_matrix/np.sum(cf_matrix), index=le.inverse_transform([0,1,2]), columns=le.inverse_transform([0,1,2]))
     plt.figure(figsize=(10,7))
     sn.heatmap(df_cm, annot=True, fmt='.2%')
-    plt.show()
-    
+    plt.ylabel('True label')
+    plt.xlabel('Predicted label')
+    plt.show() 
     misclassified_test_df = test_df[test_df.predicted != test_df.emotion]
     test_f1 = f1_score(le.fit_transform(test_df['emotion'].values), Yhat, average='macro')
     kfold_test_acc.append(test_acc)

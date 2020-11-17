@@ -80,7 +80,7 @@ def main():
 		train_df = df[df['filename'].isin(videos[train])]
 		# test_df = df[df['filename'].isin(videos[test])]
 		y = train_df['emotion'].values
-		X = train_df.drop(columns = ['success','confidence', 'face_id','frame','emotion', 'culture','filename']).values
+		X = train_df.drop(columns = ['success','confidence', 'face_id','frame','emotion', 'culture','filename', 'talking', 'gender']).values
 		## Change labels to int using a label encoder
 		Y = le.fit_transform(y)
 
@@ -95,7 +95,7 @@ def main():
 		#print(cv_scores)
 		# print(test_df[['frame','filename','culture','emotion']].head())
 
-		int_test = test_df.drop(columns = ['success','confidence', 'face_id','frame','emotion', 'culture','filename']).values
+		int_test = test_df.drop(columns = ['success','confidence', 'face_id','frame','emotion', 'culture','filename', 'talking', 'gender']).values
 		# print(len(int_test))
 		## Roya: change string labels to integer values
 		int_predict = le.fit_transform(test_df['emotion'].values) 
@@ -107,10 +107,13 @@ def main():
 		## Roya: calculate confusion matrix
 		cf_matrix = confusion_matrix(test_df['emotion'].values, test_df['predicted'].values)
 		print('CONFUSION MATRIX:\n', cf_matrix)
-		df_cm = pd.DataFrame(cf_matrix/np.sum(cf_matrix), index=le.inverse_transform([0,1,2]), columns=le.inverse_transform([0,1,2]))
+		
+
+		df_cm = pd.DataFrame(cf_matrix, index=le.inverse_transform([0,1,2]), columns=le.inverse_transform([0,1,2]))
+		df_cm = df_cm.div(df_cm.sum(axis=1), axis=0)
 		## Plot Confusion matrix
 		plt.figure(figsize=(9,6))
-		sn.heatmap(df_cm, annot=True,  fmt='.2%')
+		sn.heatmap(df_cm, annot=True, fmt='.0%')
 		plt.ylabel('True label')
 		plt.xlabel('Predicted label')
 		plt.show()
