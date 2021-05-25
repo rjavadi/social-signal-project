@@ -7,8 +7,16 @@ from glob import glob
 """
 """
 def concat_files(records: str):
-    
-    # records = sorted(records, key=lambda rec: int(os.path.splitext(os.path.basename(rec))[0]))
+
+    head_r_cols = ["pose_Rx", "pose_Ry", "pose_Rz"]
+    gaze_dir_cols = ["gaze_angle_x", "gaze_angle_y"]
+    au_cols = ["AU01_r", "AU02_r", "AU04_r", "AU05_r", "AU06_r", "AU07_r", "AU09_r", "AU10_r", "AU12_r", "AU14_r",
+               "AU15_r", "AU17_r", "AU20_r", "AU23_r", "AU25_r", "AU26_r", "AU45_r"]
+    basic_cols = ["filename", "culture", "frame", "face_id", "timestamp","confidence", "success" ]
+
+    to_keep = basic_cols  + au_cols + head_r_cols + gaze_dir_cols
+
+    records = sorted(records)
     res_df = None
     for i in range(len(records)):
         tmp = pd.read_csv(records[i])
@@ -17,9 +25,9 @@ def concat_files(records: str):
         file_name = os.path.splitext(os.path.basename(records[i]))[0]
         tmp['filename'] = file_name
         print('file name:', file_name)
-        tmp['culture'] = 'Persian'
+        tmp['culture'] = 'persian'
         if file_name.find('?') < 0:
-            tmp['emotion'] = file_name[:file_name.find('_')]
+            # tmp['emotion'] = file_name[:file_name.find('_')]
             res_df = pd.concat([res_df, tmp], ignore_index=True, sort=False)
 
         # print(train.head())
@@ -29,13 +37,13 @@ def concat_files(records: str):
 
     # au_regex_pat = re.compile(r'^cdAU[0-9]+_r$')     
     res_df.rename(columns=lambda x: x.strip(), inplace=True)
-    emma_df = pd.read_csv('../all_videos.csv')
-    res_df = res_df.filter(emma_df.columns)
-    res_df.drop(res_df[res_df['confidence'] < 0.80].index, inplace=True)
+    # emma_df = pd.read_csv('../all_videos.csv')
+    res_df = res_df.filter(to_keep)
+    res_df.drop(res_df[res_df['confidence'] < 0.85].index, inplace=True)
     res_df.drop(res_df[res_df['success'] == 0].index, inplace=True)
-    res_df.to_csv(os.path.join(os.path.curdir, 'processed_test.csv'), index=False)
+    res_df.to_csv(os.path.join(os.path.curdir, '../new_data/persian_dataset.csv'), index=False)
 
-records = glob('../data/processed_test/*.csv')
+records = glob('/home/roya/Project/Persian-mp4/Processed_videos_p/*.csv')
 print('**************   Records: ', records)
 concat_files(records)
 

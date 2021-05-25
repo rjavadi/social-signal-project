@@ -85,7 +85,7 @@ seq_dim = 50
 
 learning_rate = 0.0005
 
-df = pd.read_csv('../videos_relabelled.csv', index_col=None)
+df = pd.read_csv('../old_data/videos_relabelled.csv', index_col=None)
 videos = df['filename'].unique()
 test_videos = pd.Series(videos).sample(frac=0.20)
 

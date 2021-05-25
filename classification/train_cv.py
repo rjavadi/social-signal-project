@@ -102,7 +102,7 @@ batch_size = 32
 epochs = 100
 
 
-data_path = '../videos_relabelled.csv'
+data_path = '../old_data/videos_relabelled.csv'
 df = pd.read_csv(data_path)
 df = df[df['gender'] == 'male']
 kfold = KFold(5, True, 1)

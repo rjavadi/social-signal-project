@@ -28,7 +28,7 @@ def create_svm(X_train, X_valid, y_train, y_valid):
 def main():
 	
 	columns = ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r','culture','emotion']
-	df = pd.read_csv("../videos_relabelled.csv") 
+	df = pd.read_csv("../old_data/videos_relabelled.csv")
 
 	#extracting total set for training and testing sets 
 	# training and testing on only NA and Persian culture
