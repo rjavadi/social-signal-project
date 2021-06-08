@@ -254,7 +254,7 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 331,persian/vid_10.mp4,contempt,male,3,,persian,persian,none,3,2
 332,persian/vid_40.mp4,furious,male,4,Sadness and anger,persian,persian,"angry,hatred,weary,triumph",3,4
 333,persian/vid_48.mp4,none,male,3,,persian,persian,none,3,0
-335,persian/vid_4.mp4,contempt,male,3,,persian,persian,none,3,3
+335,persian/vid_4.mp4,contempt,female,3,,persian,persian,none,3,3
 337,persian/vid_24.mp4,contempt,female,3,"I know it looks like the emoji, but the vibe is tottaly different",persian,persian,smirk,3,2
 341,persian/vid_60.mp4,furious,female,4,,persian,persian,"hatred,triumph",3,4
 343,persian/vid_52.mp4,contempt,male,3,,persian,persian,unamused,3,3
@@ -473,7 +473,7 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 880,persian/vid_56.mp4,"annoyed,furious",male,4,,persian,persian,triumph,2,5
 881,persian/vid_80.mp4,"anger,annoyed",male,4,,persian,persian,angry,2,4
 882,persian/vid_46.mp4,"anger,disgust,annoyed",male,4,,persian,persian,furious,2,3
-883,persian/vid_26.mp4,annoyed,male,4,,persian,persian,"smirk,weary",2,4
+883,persian/vid_26.mp4,annoyed,female,4,,persian,persian,"smirk,weary",2,4
 884,persian/vid_24.mp4,"contempt,disgust",female,4,,persian,persian,smirk,2,4
 885,persian/vid_62.mp4,"annoyed,furious",female,5,,persian,persian,angry,2,4
 886,persian/vid_14.mp4,none,female,4,,persian,persian,none,2,4

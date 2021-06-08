@@ -8,3 +8,9 @@ __pycache__
 A3
 ipynb_checkpoints
 classification/test_result.csv
+.idea/csv-plugin.xml
+*.xml
+.ipynb_checkpoints
+heatmap.png 
+.idea
+
