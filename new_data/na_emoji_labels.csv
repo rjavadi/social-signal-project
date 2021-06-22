@@ -1,0 +1,103 @@
+filename,gender,emoji
+na/vid_1.mp4,female,"['neutral', 'smirk']"
+na/vid_100.mp4,female,['furious']
+na/vid_101.mp4,male,['furious']
+na/vid_102.mp4,male,['weary']
+na/vid_104.mp4,male,['weary']
+na/vid_10_1.mp4,female,['expressionless']
+na/vid_10_2.mp4,female,"['expressionless', 'unamused']"
+na/vid_10_3.mp4,female,"['expressionless', 'unamused']"
+na/vid_11.mp4,female,['rollingeyes']
+na/vid_12.mp4,female,['none']
+na/vid_13.mp4,female,"['expressionless', 'rollingeyes', 'unamused']"
+na/vid_14.mp4,female,['unamused']
+na/vid_15.mp4,female,['unamused']
+na/vid_16.mp4,female,"['expressionless', 'neutral', 'none', 'rollingeyes', 'unamused']"
+na/vid_17.mp4,female,"['rollingeyes', 'unamused']"
+na/vid_18.mp4,female,"['none', 'unamused']"
+na/vid_19.mp4,male,['smirk']
+na/vid_2.mp4,male,"['expressionless', 'unamused']"
+na/vid_20.mp4,female,"['expressionless', 'neutral', 'none', 'rollingeyes', 'skeptical']"
+na/vid_21.mp4,male,"['neutral', 'rollingeyes']"
+na/vid_22.mp4,male,['rollingeyes']
+na/vid_23.mp4,male,['expressionless']
+na/vid_24.mp4,male,['none']
+na/vid_25.mp4,male,['neutral']
+na/vid_26.mp4,male,['neutral']
+na/vid_27.mp4,male,['smirk']
+na/vid_29.mp4,male,"['expressionless', 'neutral']"
+na/vid_3.mp4,female,['expressionless']
+na/vid_30.mp4,male,['angry']
+na/vid_31.mp4,male,['neutral']
+na/vid_32.mp4,male,['expressionless']
+na/vid_33.mp4,male,['skeptical']
+na/vid_34.mp4,male,"['neutral', 'none']"
+na/vid_35.mp4,male,"['expressionless', 'skeptical', 'smirk']"
+na/vid_36.mp4,female,['neutral']
+na/vid_37.mp4,male,"['angry', 'expressionless', 'neutral', 'rollingeyes', 'unamused']"
+na/vid_38.mp4,female,"['angry', 'rollingeyes']"
+na/vid_39.mp4,female,"['angry', 'unamused']"
+na/vid_4.mp4,male,"['expressionless', 'unamused']"
+na/vid_40.mp4,female,"['furious', 'unamused', 'weary']"
+na/vid_40.mp4,male,"['none', 'skeptical', 'unamused']"
+na/vid_41.mp4,female,"['nauseated', 'neutral', 'rollingeyes', 'weary']"
+na/vid_41.mp4,male,['unamused']
+na/vid_42.mp4,male,['nauseated']
+na/vid_43.mp4,male,"['nauseated', 'unamused']"
+na/vid_44.mp4,male,['nauseated']
+na/vid_45.mp4,male,['nauseated']
+na/vid_46.mp4,male,['nauseated']
+na/vid_47.mp4,male,['weary']
+na/vid_48.mp4,male,['vomiting']
+na/vid_49.mp4,male,['nauseated']
+na/vid_5.mp4,female,['smirk']
+na/vid_5.mp4,male,['neutral']
+na/vid_50.mp4,male,['nauseated']
+na/vid_51.mp4,female,"['nauseated', 'vomiting']"
+na/vid_52.mp4,female,['weary']
+na/vid_53.mp4,male,['vomiting']
+na/vid_54.mp4,male,['nauseated']
+na/vid_55.mp4,female,"['angry', 'weary']"
+na/vid_56.mp4,female,"['angry', 'expressionless', 'nauseated', 'none', 'rollingeyes', 'unamused', 'vomiting']"
+na/vid_57.mp4,female,['vomiting']
+na/vid_58.mp4,female,['nauseated']
+na/vid_59.mp4,female,['unamused']
+na/vid_6.mp4,male,['unamused']
+na/vid_60.mp4,female,['vomiting']
+na/vid_60.mp4,male,['weary']
+na/vid_61.mp4,female,"['expressionless', 'unamused']"
+na/vid_62.mp4,female,['expressionless']
+na/vid_63.mp4,female,['angry']
+na/vid_64.mp4,female,['angry']
+na/vid_65.mp4,female,"['angry', 'furious']"
+na/vid_66.mp4,male,['furious']
+na/vid_67.mp4,male,['furious']
+na/vid_68.mp4,female,['angry']
+na/vid_69.mp4,male,['angry']
+na/vid_7.mp4,male,"['expressionless', 'unamused']"
+na/vid_70.mp4,female,['furious']
+na/vid_72.mp4,female,['triumph']
+na/vid_73.mp4,male,['furious']
+na/vid_74.mp4,male,['furious']
+na/vid_75.mp4,female,"['rollingeyes', 'unamused']"
+na/vid_76.mp4,female,['furious']
+na/vid_77.mp4,female,['furious']
+na/vid_78.mp4,male,['furious']
+na/vid_79.mp4,male,['furious']
+na/vid_8.mp4,male,['expressionless']
+na/vid_80.mp4,male,"['furious', 'hatred']"
+na/vid_81.mp4,male,"['furious', 'hatred']"
+na/vid_82.mp4,female,['hatred']
+na/vid_83.mp4,female,['angry']
+na/vid_84.mp4,female,['angry']
+na/vid_85.mp4,female,['angry']
+na/vid_86.mp4,female,['furious']
+na/vid_87.mp4,male,['hatred']
+na/vid_88.mp4,female,"['hatred', 'triumph']"
+na/vid_89.mp4,female,['hatred']
+na/vid_9.mp4,female,['rollingeyes']
+na/vid_90.mp4,male,['angry']
+na/vid_92.mp4,male,['hatred']
+na/vid_93.mp4,male,['angry']
+na/vid_95.mp4,female,['hatred']
+na/vid_97.mp4,female,"['furious', 'hatred']"

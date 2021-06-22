@@ -25,7 +25,7 @@ def concat_files(records: str):
         file_name = os.path.splitext(os.path.basename(records[i]))[0]
         tmp['filename'] = file_name
         print('file name:', file_name)
-        tmp['culture'] = 'persian'
+        tmp['culture'] = 'north american'
         if file_name.find('?') < 0:
             # tmp['emotion'] = file_name[:file_name.find('_')]
             res_df = pd.concat([res_df, tmp], ignore_index=True, sort=False)
@@ -41,9 +41,9 @@ def concat_files(records: str):
     res_df = res_df.filter(to_keep)
     res_df.drop(res_df[res_df['confidence'] < 0.85].index, inplace=True)
     res_df.drop(res_df[res_df['success'] == 0].index, inplace=True)
-    res_df.to_csv(os.path.join(os.path.curdir, '../new_data/persian_dataset.csv'), index=False)
+    res_df.to_csv(os.path.join(os.path.curdir, '../new_data/na_dataset.csv'), index=False)
 
-records = glob('/home/roya/Project/Persian-mp4/Processed_videos_p/*.csv')
+records = glob('/home/roya/Project/Processed_videos_na/*.csv')
 print('**************   Records: ', records)
 concat_files(records)
 

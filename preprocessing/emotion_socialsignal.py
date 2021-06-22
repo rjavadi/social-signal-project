@@ -14,22 +14,21 @@ import pandas as pd
 
 
 
-emotion_data = pd.read_csv("../new_data/labels.csv")
-# cols = ["id", "filename","emotions","emoji","gender","confidence","comment","intensity"]
+emoji_data = pd.read_csv("../new_data/emoji_labels.csv")
 contents = []
-emotion_data['emotions'] = emotion_data['emotions'].apply(eval)
-for i in range(0, emotion_data.shape[0]):
-    row = emotion_data.iloc[i]
+emoji_data['emoji'] = emoji_data['emoji'].apply(eval)
+for i in range(0, emoji_data.shape[0]):
+    row = emoji_data.iloc[i]
     # print(type(row['emotions']))
-    for emotion in row['emotions']:
-        # for emoji in row['emoji'].split(','):
-        contents.append([row["filename"], emotion])
+    # for emotion in row['emotions']:
+    for emoji in row['emoji']:
+        contents.append([row["filename"], emoji])
         # print(emotion)
-flattened_df = pd.DataFrame(columns=['filename', 'emotion'], data=contents)
+flattened_df = pd.DataFrame(columns=['filename', 'emoji'], data=contents)
 
 ss_data = pd.read_csv("../new_data/ss_persian.csv", index_col='filename')
 ss_data['social_signals'] = ss_data['social_signals'].apply(eval)
-cols = flattened_df['emotion'].unique()
+cols = flattened_df['emoji'].unique()
 rows = ['Wrinkled nose', 'Eyebrows Pushed Together', 'Side Eye', 'Curling Upper Lip', 'Raised Eyebrows', 'Lips Pressed Together', 'Mocking', 'Shaking Head', 'Smirk', 
     'Head Turned Away', 'Calm', 'Wide Eyes', 'Snarl', 'Raised chin', 'Squinting', 'Smiling', 'Closing Eyes', 'Arms Crossed']
 
@@ -39,12 +38,12 @@ for i in range(0, flattened_df.shape[0]):
     row = flattened_df.iloc[i]
     # print(row)
     for signal in ss_data.loc[row['filename']]['social_signals']:
-        df.loc[signal, row['emotion']] += 1
+        df.loc[signal, row['emoji']] += 1
 
 
 # Normalizing rows:
 df["sum"] = df.sum(axis=1)
-df_new = df.loc[:,"annoyed":"furious"].div(df["sum"], axis=0)
+df_new = df.loc[:,cols[0]:cols[-1]].div(df["sum"], axis=0)
 df_new
 
 # Plotting heatmap
@@ -52,5 +51,5 @@ import seaborn as sns
 import matplotlib.pyplot as plt 
 
 fig, ax = plt.subplots(figsize = (9,5))
-sns.heatmap(df.loc[:, "annoyed":"furious"], annot=True)
-plt.savefig("ss_persian_heatmapt.png", dpi = 300)
+sns.heatmap(df.loc[:, cols[0]:cols[-1]], annot=True)
+plt.savefig("ss_emoji_persian_heatmapt.png", dpi = 300)
