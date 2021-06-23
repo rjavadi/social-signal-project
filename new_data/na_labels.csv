@@ -7,26 +7,26 @@ na/vid_104.mp4,male,['anger']
 na/vid_10_1.mp4,female,"['annoyed', 'contempt']"
 na/vid_10_2.mp4,female,"['annoyed', 'disgust']"
 na/vid_10_3.mp4,female,['annoyed']
-na/vid_11.mp4,female,"['annoyed', 'none']"
+na/vid_11.mp4,female,"['annoyed']"
 na/vid_12.mp4,female,['none']
 na/vid_13.mp4,female,['annoyed']
 na/vid_14.mp4,female,['contempt']
 na/vid_15.mp4,female,['contempt']
-na/vid_16.mp4,female,"['annoyed', 'none']"
+na/vid_16.mp4,female,"['annoyed']"
 na/vid_17.mp4,female,['annoyed']
-na/vid_18.mp4,female,"['contempt', 'none']"
+na/vid_18.mp4,female,"['contempt']"
 na/vid_19.mp4,male,['contempt']
 na/vid_2.mp4,male,['annoyed']
 na/vid_20.mp4,female,['none']
 na/vid_21.mp4,male,['none']
 na/vid_22.mp4,male,['annoyed']
-na/vid_23.mp4,male,"['contempt', 'none']"
+na/vid_23.mp4,male,"['contempt']"
 na/vid_24.mp4,male,['none']
-na/vid_25.mp4,male,"['contempt', 'none']"
+na/vid_25.mp4,male,"['contempt']"
 na/vid_26.mp4,male,['none']
-na/vid_27.mp4,male,"['contempt', 'none']"
+na/vid_27.mp4,male,"['contempt']"
 na/vid_29.mp4,male,['annoyed']
-na/vid_3.mp4,female,"['annoyed', 'none']"
+na/vid_3.mp4,female,"['annoyed']"
 na/vid_30.mp4,male,['anger']
 na/vid_31.mp4,male,['none']
 na/vid_32.mp4,male,['contempt']
@@ -38,10 +38,6 @@ na/vid_37.mp4,male,['annoyed']
 na/vid_38.mp4,female,"['anger', 'annoyed']"
 na/vid_39.mp4,female,['contempt']
 na/vid_4.mp4,male,['annoyed']
-na/vid_40.mp4,female,"['annoyed', 'hatred']"
-na/vid_40.mp4,male,['disgust']
-na/vid_41.mp4,female,"['contempt', 'disgust']"
-na/vid_41.mp4,male,"['annoyed', 'disgust', 'none']"
 na/vid_42.mp4,male,['disgust']
 na/vid_43.mp4,male,['disgust']
 na/vid_44.mp4,male,['disgust']
@@ -50,8 +46,7 @@ na/vid_46.mp4,male,['disgust']
 na/vid_47.mp4,male,['disgust']
 na/vid_48.mp4,male,['disgust']
 na/vid_49.mp4,male,['disgust']
-na/vid_5.mp4,female,['contempt']
-na/vid_5.mp4,male,['none']
+na/vid_5.mp4,male,['contempt']
 na/vid_50.mp4,male,['disgust']
 na/vid_51.mp4,female,['disgust']
 na/vid_52.mp4,female,['disgust']
@@ -64,7 +59,6 @@ na/vid_58.mp4,female,['disgust']
 na/vid_59.mp4,female,['disgust']
 na/vid_6.mp4,male,['annoyed']
 na/vid_60.mp4,female,['disgust']
-na/vid_60.mp4,male,['disgust']
 na/vid_61.mp4,female,['contempt']
 na/vid_62.mp4,female,"['annoyed', 'contempt']"
 na/vid_63.mp4,female,"['anger', 'annoyed', 'contempt']"
@@ -98,6 +92,6 @@ na/vid_89.mp4,female,['anger']
 na/vid_9.mp4,female,['annoyed']
 na/vid_90.mp4,male,['anger']
 na/vid_92.mp4,male,['anger']
-na/vid_93.mp4,male,"['anger', 'none']"
+na/vid_93.mp4,male,"['anger']"
 na/vid_95.mp4,female,"['anger', 'hatred']"
 na/vid_97.mp4,female,['furious']

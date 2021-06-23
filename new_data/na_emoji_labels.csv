@@ -38,10 +38,6 @@ na/vid_37.mp4,male,"['angry', 'expressionless', 'neutral', 'rollingeyes', 'unamu
 na/vid_38.mp4,female,"['angry', 'rollingeyes']"
 na/vid_39.mp4,female,"['angry', 'unamused']"
 na/vid_4.mp4,male,"['expressionless', 'unamused']"
-na/vid_40.mp4,female,"['furious', 'unamused', 'weary']"
-na/vid_40.mp4,male,"['none', 'skeptical', 'unamused']"
-na/vid_41.mp4,female,"['nauseated', 'neutral', 'rollingeyes', 'weary']"
-na/vid_41.mp4,male,['unamused']
 na/vid_42.mp4,male,['nauseated']
 na/vid_43.mp4,male,"['nauseated', 'unamused']"
 na/vid_44.mp4,male,['nauseated']

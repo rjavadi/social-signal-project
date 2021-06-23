@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-# data = pd.read_csv("./new_data/labels.csv")
+# data = pd.read_csv("../new_data/na_labels.csv")
 # # cols = ["id", "filename","emotions","emoji","gender","confidence","comment","intensity"]
 # contents = []
 # data['emotions'] = data['emotions'].apply(eval)
@@ -15,9 +15,9 @@ import pandas as pd
 #         # print(emotion)
 # flattened_df = pd.DataFrame(columns=['filename', 'emotion'], data=contents)
 
-# emoji_data = pd.read_csv("./new_data/emoji_labels.csv", index_col='filename')
+# emoji_data = pd.read_csv("../new_data/na_emoji_labels.csv", index_col='filename')
 # emoji_data['emoji'] = emoji_data['emoji'].apply(eval)
-# cols = flattened_df['emotion'].unique()
+# cols = ['annoyed','contempt','anger','none','hatred','disgust','furious']
 # rows = ['angry', 'furious', 'hatred', 'neutral', 'rollingeyes', 'smirk', 'unamused', 'weary', 'smilingimp', 
 #     'vomiting', 'triumph', 'none', 'expressionless', 'nauseated', 'skeptical']
 
@@ -31,9 +31,9 @@ import pandas as pd
 
 
 # # Normalizing rows:
-# df["sum"] = df.sum(axis=1)
-# df_new = df.loc[:,"annoyed":"furious"].div(df["sum"], axis=0)
-# df_new
+# # df["sum"] = df.sum(axis=1)
+# # df_new = df.loc[:,"annoyed":"furious"].div(df["sum"], axis=0)
+# # df_new
 
 # # Plotting heatmap
 # import seaborn as sns
@@ -41,15 +41,15 @@ import pandas as pd
 
 # fig, ax = plt.subplots(figsize = (9,5))
 # sns.heatmap(df.loc[:, "annoyed":"furious"], annot=True)
-# plt.savefig("heatmap.png", dpi = 300)
+# plt.savefig("na_heatmap.png", dpi = 300)
 
 
 
 
 
-## Emotion-Emoji Co-occurrence before voting.
+###############    Emotion-Emoji Co-occurrence before voting. ###############
 
-data = pd.read_csv("../new_data/persian_annotations.csv")
+data = pd.read_csv("../new_data/na_annotations.csv")
 # cols = ["id", "filename","emotions","emoji","gender","confidence","comment","intensity"]
 
 def clean(input: str):
@@ -93,4 +93,4 @@ import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots(figsize = (9,5))
 sns.heatmap(count_df.loc[:, "anger":"none"], annot=True)
-plt.savefig("before_voting_heatmap.png", dpi = 300)
+plt.savefig("na_before_voting_heatmap.png", dpi = 300)

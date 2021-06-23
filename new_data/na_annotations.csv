@@ -22,7 +22,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 196,na/vid_66.mp4,furious,male,4,,north american,english,furious,2,6
 197,na/vid_6.mp4,annoyed,male,4,,north american,english,unamused,2,2
 198,na/vid_86.mp4,anger,female,4,,north american,english,hatred,2,4
-199,na/vid_40.mp4,disgust,male,4,,north american,english,unamused,2,2
 200,na/vid_74.mp4,anger,male,4,,north american,english,furious,2,4
 201,na/vid_76.mp4,furious,female,4,,north american,english,furious,2,5
 202,na/vid_16.mp4,annoyed,female,4,,north american,english,expressionless,2,3
@@ -68,7 +67,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 402,na/vid_5.mp4,none,male,4,,north american,english,neutral,3,1
 403,na/vid_29.mp4,contempt,male,4,,north american,english,unamused,3,1
 405,na/vid_10_3.mp4,annoyed,female,4,,north american,english,unamused,3,1
-406,na/vid_41.mp4,disgust,male,4,,north american,english,unamused,3,1
 407,na/vid_1.mp4,none,female,4,,north american,english,neutral,3,1
 408,na/vid_79.mp4,furious,male,4,,north american,english,furious,3,3
 409,na/vid_53.mp4,disgust,male,4,,north american,english,vomiting,3,4
@@ -115,7 +113,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 450,na/vid_34.mp4,none,male,4,,north american,english,skeptical,4,1
 451,na/vid_16.mp4,none,female,4,,north american,english,neutral,4,0
 452,na/vid_80.mp4,furious,male,4,,north american,english,hatred,4,4
-453,na/vid_40.mp4,disgust,male,4,,north american,english,skeptical,4,1
 454,na/vid_24.mp4,none,male,4,,north american,english,skeptical,4,1
 455,na/vid_38.mp4,anger,female,4,,north american,english,angry,4,2
 456,na/vid_36.mp4,none,female,4,,north american,english,skeptical,4,1
@@ -136,7 +133,7 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 472,na/vid_79.mp4,anger,male,4,,north american,english,hatred,2,4
 473,na/vid_17.mp4,contempt,female,4,,north american,english,rollingeyes,2,3
 474,na/vid_11.mp4,contempt,female,5,,north american,english,rollingeyes,2,3
-475,na/vid_5.mp4,contempt,female,5,,north american,english,smirk,2,2
+475,na/vid_5.mp4,contempt,male,5,,north american,english,smirk,2,2
 476,na/vid_53.mp4,disgust,male,5,,north american,english,nauseated,2,5
 477,na/vid_57.mp4,disgust,female,4,,north american,english,nauseated,2,3
 478,na/vid_19.mp4,contempt,male,4,,north american,english,"smirk,unamused",2,3
@@ -152,7 +149,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 488,na/vid_77.mp4,anger,female,4,,north american,english,"angry,hatred,furious,weary",2,4
 489,na/vid_35.mp4,contempt,male,4,,north american,english,"skeptical,smirk,unamused,rollingeyes",2,3
 490,na/vid_69.mp4,none,male,4,Cringe ,north american,english,"rollingeyes,angry,weary",2,3
-491,na/vid_41.mp4,contempt,female,4,,north american,english,"rollingeyes,weary",2,2
 492,na/vid_73.mp4,"anger,hatred,furious",male,5,,north american,english,"hatred,furious",2,6
 493,na/vid_25.mp4,contempt,male,5,,north american,english,"smirk,rollingeyes",2,2
 494,na/vid_83.mp4,"anger,contempt",female,4,,north american,english,"rollingeyes,angry,hatred",2,4
@@ -176,7 +172,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 561,na/vid_60.mp4,disgust,female,5,,north american,english,nauseated,2,4
 562,na/vid_58.mp4,disgust,female,4,,north american,english,nauseated,2,2
 563,na/vid_44.mp4,none,male,3,,north american,english,none,2,0
-564,na/vid_40.mp4,none,male,3,Cringing,north american,english,none,2,1
 565,na/vid_20.mp4,contempt,female,3,,north american,english,rollingeyes,2,2
 566,na/vid_24.mp4,none,male,3,laughing/enjoyment,north american,english,none,2,1
 567,na/vid_26.mp4,contempt,male,3,,north american,english,neutral,2,3
@@ -218,7 +213,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 652,na/vid_75.mp4,annoyed,female,4,,north american,english,unamused,3,4
 653,na/vid_11.mp4,annoyed,female,3,,north american,english,rollingeyes,3,3
 654,na/vid_69.mp4,anger,male,4,,north american,english,angry,3,2
-655,na/vid_41.mp4,annoyed,male,3,,north american,english,unamused,3,3
 656,na/vid_61.mp4,contempt,female,2,,north american,english,expressionless,3,1
 657,na/vid_31.mp4,annoyed,male,3,,north american,english,expressionless,3,1
 658,na/vid_81.mp4,furious,male,4,,north american,english,hatred,3,5
@@ -276,7 +270,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 716,na/vid_2.mp4,annoyed,male,2,,north american,english,"expressionless,unamused",4,1
 717,na/vid_14.mp4,annoyed,female,4,,north american,english,unamused,4,1
 718,na/vid_4.mp4,"contempt,annoyed",male,4,,north american,english,unamused,4,1
-719,na/vid_40.mp4,annoyed,female,4,,north american,english,"unamused,furious",4,2
 720,na/vid_54.mp4,disgust,male,4,,north american,english,vomiting,4,3
 721,na/vid_6.mp4,annoyed,male,4,,north american,english,"expressionless,unamused",4,2
 722,na/vid_48.mp4,disgust,male,4,,north american,english,vomiting,4,2
@@ -322,7 +315,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 901,na/vid_11.mp4,none,female,4,more confused/bewildered than contemptuous,north american,english,skeptical,2,0
 902,na/vid_55.mp4,disgust,female,4,,north american,english,skeptical,2,1
 903,na/vid_15.mp4,contempt,female,4,and smug,north american,english,unamused,2,0
-904,na/vid_41.mp4,none,male,4,confused,north american,english,none,2,1
 906,na/vid_33.mp4,none,male,4,questioning,north american,english,none,2,0
 907,na/vid_73.mp4,furious,male,5,,north american,english,furious,2,6
 908,na/vid_83.mp4,contempt,female,4,,north american,english,angry,2,1
@@ -361,7 +353,6 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 941,na/vid_7.mp4,annoyed,male,5,,north american,english,expressionless,2,0
 942,na/vid_83.mp4,none,female,4,,north american,english,none,2,0
 943,na/vid_33.mp4,contempt,male,5,,north american,english,skeptical,2,0
-944,na/vid_41.mp4,disgust,female,4,,north american,english,"neutral,nauseated",2,1
 945,na/vid_69.mp4,annoyed,male,4,,north american,english,"unamused,weary",2,2
 946,na/vid_23.mp4,contempt,male,4,,north american,english,smirk,2,0
 947,na/vid_25.mp4,none,male,5,,north american,english,neutral,2,0
@@ -395,10 +386,9 @@ id,filename,emotions,gender,confidence,comment,annotator_culture,annotator_langu
 975,na/vid_6.mp4,annoyed,male,4,,north american,english,neutral,1,2
 976,na/vid_10_1.mp4,contempt,female,4,,north american,english,smirk,1,2
 977,na/vid_50.mp4,annoyed,male,4,,north american,english,expressionless,1,1
-978,na/vid_60.mp4,disgust,male,4,,north american,english,weary,1,3
+978,na/vid_60.mp4,disgust,female,4,,north american,english,weary,1,3
 979,na/vid_4.mp4,annoyed,male,4,,north american,english,expressionless,1,3
 980,na/vid_72.mp4,anger,female,5,,north american,english,"angry,triumph",1,5
-981,na/vid_40.mp4,hatred,female,4,,north american,english,weary,1,3
 982,na/vid_62.mp4,contempt,female,4,,north american,english,triumph,1,3
 983,na/vid_32.mp4,annoyed,male,3,,north american,english,neutral,1,1
 984,na/vid_64.mp4,anger,female,5,,north american,english,angry,1,1
