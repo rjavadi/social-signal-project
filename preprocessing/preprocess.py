@@ -41,7 +41,7 @@ def concat_files(records: str):
     res_df = res_df.filter(to_keep)
     res_df.drop(res_df[res_df['confidence'] < 0.85].index, inplace=True)
     res_df.drop(res_df[res_df['success'] == 0].index, inplace=True)
-    res_df.to_csv(os.path.join(os.path.curdir, '../new_data/na_dataset.csv'), index=False)
+    res_df.to_csv(os.path.join(os.path.curdir, '../new_data/NA/na_dataset.csv'), index=False)
 
 records = glob('/home/roya/Project/Processed_videos_na/*.csv')
 print('**************   Records: ', records)

@@ -41,7 +41,7 @@ import pandas as pd
 
 # fig, ax = plt.subplots(figsize = (9,5))
 # sns.heatmap(df.loc[:, "annoyed":"furious"], annot=True)
-# plt.savefig("na_heatmap.png", dpi = 300)
+# plt.savefig("na_after_voting_heatmap.png", dpi = 300)
 
 
 
@@ -49,7 +49,7 @@ import pandas as pd
 
 ###############    Emotion-Emoji Co-occurrence before voting. ###############
 
-data = pd.read_csv("../new_data/na_annotations.csv")
+data = pd.read_csv("../new_data/NA/na_annotations.csv")
 # cols = ["id", "filename","emotions","emoji","gender","confidence","comment","intensity"]
 
 def clean(input: str):

@@ -1,5 +1,6 @@
 import pandas as pd
-
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 def clean(input: str):
     input = input.replace(',', '","')
@@ -14,7 +15,7 @@ def clean(input: str):
 
 
 
-emoji_data = pd.read_csv("../new_data/na_emoji_labels.csv")
+emoji_data = pd.read_csv("../new_data/NA/na_emoji_labels.csv")
 contents = []
 emoji_data['emoji'] = emoji_data['emoji'].apply(eval)
 for i in range(0, emoji_data.shape[0]):
@@ -26,7 +27,7 @@ for i in range(0, emoji_data.shape[0]):
         # print(emotion)
 flattened_df = pd.DataFrame(columns=['filename', 'emoji'], data=contents)
 
-ss_data = pd.read_csv("../new_data/ss_na.csv", index_col='filename')
+ss_data = pd.read_csv("../new_data/NA/ss_na.csv", index_col='filename')
 ss_data['social_signals'] = ss_data['social_signals'].apply(eval)
 cols = ['rollingeyes', 'unamused', 'neutral', 'smirk', 'angry', 'hatred', 'furious',
     'triumph', 'smilingimp', 'weary', 'skeptical', 'expressionless', 'nauseated', 'vomiting', 'none']
@@ -46,15 +47,13 @@ for i in range(0, flattened_df.shape[0]):
 # Normalizing rows:
 df["sum"] = df.sum(axis=1)
 df_new = df.loc[:,cols[0]:cols[-1]].div(df["sum"], axis=0)
-df_new
 fig, ax = plt.subplots(figsize = (12,6))
 sns.heatmap(df_new.loc[:, cols[0]:cols[-1]], annot=True,fmt=".2f")
 
 # Plotting heatmap
-import seaborn as sns
-import matplotlib.pyplot as plt 
 
-fig, ax = plt.subplots(figsize = (9,5))
+
+fig, ax = plt.subplots(figsize = (12,6))
 sns.heatmap(df.loc[:, cols[0]:cols[-1]], annot=True)
 plt.savefig("ss_emoji_na_heatmapt.png", dpi = 300, bbox_inches = 'tight')
 

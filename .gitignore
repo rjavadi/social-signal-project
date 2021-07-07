@@ -7,10 +7,10 @@ ffmpeg*
 __pycache__
 A3
 ipynb_checkpoints
-classification/test_result.csv
+deep_networks_classification/test_result.csv
 .idea/csv-plugin.xml
 *.xml
 .ipynb_checkpoints
-heatmap.png 
+preprocessing/plots/p_after_voting_heatmap.png
 .idea
 
