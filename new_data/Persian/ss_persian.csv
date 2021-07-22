@@ -1,13 +1,13 @@
 filename,social_signals
-persian/vid_1.mp4,['Wrinkled nose']
+persian/vid_1.mp4,"['Wrinkled nose', 'Downturned lips']"
 persian/vid_2.mp4,['Eyebrows Pushed Together']
 persian/vid_3.mp4,"['Side Eye','Curling Upper Lip']"
 persian/vid_4.mp4,"['Curling Upper Lip','Wrinkled nose']"
 persian/vid_5.mp4,"['Raised Eyebrows','Mocking']"
 persian/vid_6.mp4,['Lips Pressed Together']
 persian/vid_7.mp4,"['Eyebrows Pushed Together','Mocking']"
-persian/vid_8.mp4,['Shaking Head']
-persian/vid_9.mp4,['Eyebrows Pushed Together']
+persian/vid_8.mp4,"['Shaking Head','Raised chin']"
+persian/vid_9.mp4,"['Eyebrows Pushed Together', 'Squinting']"
 persian/vid_10.mp4,['Smirk']
 persian/vid_11.mp4,"['Eyebrows Pushed Together','Side Eye','Head Turned Away']"
 persian/vid_12.mp4,['Raised Eyebrows']
@@ -16,18 +16,18 @@ persian/vid_14.mp4,"['Calm','Raised Eyebrows']"
 persian/vid_15.mp4,"['Wide Eyes','Snarl']"
 persian/vid_16.mp4,['Smirk']
 persian/vid_17.mp4,"['Side Eye','Smirk']"
-persian/vid_18.mp4,"['Curling Upper Lip','Shaking Head']"
+persian/vid_18.mp4,"['Shaking Head', 'Downturned lips']"
 persian/vid_19.mp4,"['Eyebrows Pushed Together','Lips Pressed Together']"
 persian/vid_20.mp4,['Shaking Head']
 persian/vid_21.mp4,"['Smirk','Raised Eyebrows']"
-persian/vid_22.mp4,"['Raised chin','Eyebrows Pushed Together']"
+persian/vid_22.mp4,"['Raised chin','Eyebrows Pushed Together', 'Downturned lips']"
 persian/vid_23.mp4,"['Mocking','Squinting']"
 persian/vid_24.mp4,"['Shaking Head','Smirk']"
-persian/vid_25.mp4,"['Shaking Head','Raised Eyebrows']"
+persian/vid_25.mp4,"['Shaking Head','Raised Eyebrows', 'Downturned lips']"
 persian/vid_26.mp4,['Side Eye']
 persian/vid_27.mp4,"['Eyebrows Pushed Together','Side Eye','Raised Eyebrows']"
-persian/vid_28.mp4,"['Side Eye','Smiling']"
-persian/vid_29.mp4,"['Shaking Head','Smiling']"
+persian/vid_28.mp4,"['Side Eye','Smirk']"
+persian/vid_29.mp4,"['Shaking Head','Smirk']"
 persian/vid_30.mp4,['Shaking Head']
 persian/vid_31.mp4,['Eyebrows Pushed Together']
 persian/vid_32.mp4,['Eyebrows Pushed Together']
@@ -40,33 +40,33 @@ persian/vid_38.mp4,"['Lips Pressed Together','Head Turned Away']"
 persian/vid_40.mp4,"['Eyebrows Pushed Together','Curling Upper Lip']"
 persian/vid_41.mp4,"['Eyebrows Pushed Together','Lips Pressed Together']"
 persian/vid_42.mp4,"['Raised Eyebrows','Wrinkled nose']"
-persian/vid_43.mp4,"['Squinting', 'Eyebrows Pushed Together','Curling Upper Lip']"
-persian/vid_44.mp4,['Eyebrows Pushed Together']
+persian/vid_43.mp4,"['Squinting', 'Eyebrows Pushed Together','Downturned lips']"
+persian/vid_44.mp4,"['Eyebrows Pushed Together', 'Downturned lips', 'Wrinkled nose']"
 persian/vid_45.mp4,['Lips Pressed Together']
 persian/vid_46.mp4,"['Wrinkled nose','Snarl']"
 persian/vid_47.mp4,"['Lips Pressed Together','Closing Eyes']"
-persian/vid_48.mp4,['Eyebrows Pushed Together']
+persian/vid_48.mp4,"['Eyebrows Pushed Together', 'Lips Pressed Together']"
 persian/vid_49.mp4,"['Eyebrows Pushed Together', 'Wrinkled nose', 'Lips Pressed Together']"
 persian/vid_50.mp4,['Shaking Head']
 persian/vid_51.mp4,"['Raised Eyebrows','Head Turned Away']"
-persian/vid_52.mp4,"['Side Eye','Eyebrows Pushed Together']"
+persian/vid_52.mp4,"['Side Eye','Eyebrows Pushed Together', 'Curling Upper Lip']"
 persian/vid_53.mp4,"['Squinting','Eyebrows Pushed Together','Raised chin']"
 persian/vid_54.mp4,['Eyebrows Pushed Together']
-persian/vid_55.mp4,['Wrinkled nose']
+persian/vid_55.mp4,"['Wrinkled nose','Downturned lips']"
 persian/vid_56.mp4,['Lips Pressed Together']
-persian/vid_57.mp4,"['Wrinkled nose','Closing Eyes','Head Turned Away']"
+persian/vid_57.mp4,"['Wrinkled nose','Closing Eyes','Head Turned Away','Downturned lips']"
 persian/vid_58.mp4,"['Shaking Head','Curling Upper Lip']"
 persian/vid_59.mp4,['Snarl']
-persian/vid_60.mp4,"['Wide Eyes','Curling Upper Lip']"
+persian/vid_60.mp4,"['Wide Eyes','Snarl']"
 persian/vid_61.mp4,['Eyebrows Pushed Together']
 persian/vid_62.mp4,"['Wide Eyes','Lips Pressed Together']"
 persian/vid_63.mp4,['Curling Upper Lip']
-persian/vid_64.mp4,"['Eyebrows Pushed Together','Snarl']"
+persian/vid_64.mp4,['Eyebrows Pushed Together']
 persian/vid_65.mp4,['Raised Eyebrows']
-persian/vid_66.mp4,"['Arms Crossed','Side Eye']"
-persian/vid_67.mp4,"['Eyebrows Pushed Together','Head Turned Away']"
+persian/vid_66.mp4,"['Arms Crossed','Side Eye', 'Lips Pressed Together']"
+persian/vid_67.mp4,['Eyebrows Pushed Together']
 persian/vid_68.mp4,"['Raised Eyebrows','Wide Eyes']"
-persian/vid_69.mp4,"['Shaking Head','Eyebrows Pushed Together']"
+persian/vid_69.mp4,"['Shaking Head','Eyebrows Pushed Together','Curling Upper Lip']"
 persian/vid_70.mp4,['Eyebrows Pushed Together']
 persian/vid_71.mp4,['Eyebrows Pushed Together']
 persian/vid_72.mp4,"['Squinting','Eyebrows Pushed Together']"
@@ -74,7 +74,7 @@ persian/vid_73.mp4,['Curling Upper Lip']
 persian/vid_74.mp4,"['Eyebrows Pushed Together','Squinting','Wrinkled nose']"
 persian/vid_75.mp4,"['Wrinkled nose','Snarl']"
 persian/vid_76.mp4,"['Lips Pressed Together', 'Eyebrows Pushed Together']"
-persian/vid_77.mp4,"['Eyebrows Pushed Together','Head Turned Away']"
+persian/vid_77.mp4,"['Eyebrows Pushed Together','Snarl']"
 persian/vid_78.mp4,"['Raised Eyebrows','Wide Eyes']"
 persian/vid_79.mp4,['Wrinkled nose']
 persian/vid_80.mp4,"['Squinting','Eyebrows Pushed Together']"
@@ -87,11 +87,11 @@ persian/vid_86.mp4,['Side Eye']
 persian/vid_87.mp4,['Eyebrows Pushed Together']
 persian/vid_88.mp4,['Curling Upper Lip']
 persian/vid_89.mp4,['Wrinkled nose']
-persian/vid_90.mp4,['Raised Eyebrows']
+persian/vid_90.mp4,"['Raised Eyebrows','Smirk']"
 persian/vid_91.mp4,"['Squinting','Eyebrows Pushed Together']"
-persian/vid_92.mp4,"['Curling Upper Lip','Head Turned Away']"
+persian/vid_92.mp4,"['Downturned lips','Head Turned Away']"
 persian/vid_93.mp4,"['Wrinkled nose','Shaking Head']"
 persian/vid_94.mp4,['Raised Eyebrows']
-persian/vid_95.mp4,['Squinting']
+persian/vid_95.mp4,"['Squinting','Downturned lips']"
 persian/vid_96.mp4,['Raised Eyebrows']
 persian/vid_97.mp4,['Smirk']

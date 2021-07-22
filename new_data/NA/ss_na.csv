@@ -1,13 +1,13 @@
 filename,social_signals
-na/vid_1.mp4,['Curling Upper Lip']
+na/vid_1.mp4,['Downturned lips']
 na/vid_2.mp4,['Eyebrows Pushed Together']
-na/vid_3.mp4,['Smiling']
+na/vid_3.mp4,['Curling Upper Lip']
 na/vid_4.mp4,"['Eyebrows Pushed Together', 'Squinting', 'Wrinkled nose']"
 na/vid_5.mp4,"['Curling Upper Lip', 'Shaking Head']"
 na/vid_6.mp4,['Shaking Head']
-na/vid_7.mp4,"['Eyebrows Pushed Together', 'Squinting']"
+na/vid_7.mp4,"['Eyebrows Pushed Together', 'Squinting', 'Curling Upper Lip']"
 na/vid_8.mp4,['Squinting']
-na/vid_9.mp4,"['Squinting', 'Closing Eyes']"
+na/vid_9.mp4,['Closing Eyes']
 na/vid_10_1.mp4,['Shaking Head']
 na/vid_10_2.mp4,"['Raised Eyebrows', 'Eyebrows Pushed Together']"
 na/vid_10_3.mp4,"['Eyebrows Pushed Together', 'Shaking Head']"
@@ -19,33 +19,33 @@ na/vid_15.mp4,"['Raised Eyebrows', 'Smiling']"
 na/vid_16.mp4,['Side Eye']
 na/vid_17.mp4,['Shaking Head']
 na/vid_18.mp4,['Raised Eyebrows']
-na/vid_19.mp4,"['Raised Eyebrows', 'Smiling']"
-na/vid_20.mp4,['Eyebrows Pushed Together']
+na/vid_19.mp4,"['Raised Eyebrows', 'Smirk']"
+na/vid_20.mp4,['Calm']
 na/vid_21.mp4,['Wide Eyes']
 na/vid_22.mp4,['Rolling Eyes']
-na/vid_23.mp4,"['Squinting', 'Smiling']"
-na/vid_24.mp4,"['Smiling', 'Raised Eyebrows', 'Side Eye']"
-na/vid_25.mp4,"['Calm']"
+na/vid_23.mp4,"['Squinting', 'Smirk']"
+na/vid_24.mp4,"['Smirk', 'Raised Eyebrows', 'Side Eye']"
+na/vid_25.mp4,"['Smirk']"
 na/vid_26.mp4,"['Calm', 'Raised Eyebrows']"
-na/vid_27.mp4,"['Raised Eyebrows', 'Smiling']"
+na/vid_27.mp4,"['Raised Eyebrows', 'Smirk']"
 na/vid_29.mp4,"['Eyebrows Pushed Together', 'Lips Pressed Together']"
 na/vid_30.mp4,['Eyebrows Pushed Together']
 na/vid_31.mp4,['Smiling']
 na/vid_32.mp4,"['Lips Pressed Together', 'Shaking Head']"
-na/vid_33.mp4,"['Raised Eyebrows', 'Squinting']"
+na/vid_33.mp4,"['Raised Eyebrows']"
 na/vid_34.mp4,['Calm']
 na/vid_35.mp4,"['Raised Eyebrows', 'Curling Upper Lip']"
 na/vid_36.mp4,['Calm']
-na/vid_37.mp4,['Raised Eyebrows']
+na/vid_37.mp4,['Calm']
 na/vid_38.mp4,"['Raised Eyebrows', 'Lips Pressed Together']"
-na/vid_39.mp4,"['Side Eye', 'Eyebrows Pushed Together', 'Lips Pressed Together']"
+na/vid_39.mp4,"['Side Eye', 'Eyebrows Pushed Together', 'Lips Pressed Together', 'Head Turned Away']"
 na/vid_42.mp4,['Wrinkled nose']
-na/vid_43.mp4,"['Raised Eyebrows', 'Smiling']"
+na/vid_43.mp4,"['Raised Eyebrows']"
 na/vid_44.mp4,['Raised Eyebrows']
 na/vid_45.mp4,['Head Turned Away']
 na/vid_46.mp4,"['Curling Upper Lip', 'Head Turned Away']"
 na/vid_47.mp4,"['Eyebrows Pushed Together', 'Curling Upper Lip']"
-na/vid_48.mp4,"['Closing Eyes', 'Wrinkled nose']"
+na/vid_48.mp4,"['Closing Eyes', 'Wrinkled nose', 'Head Turned Away']"
 na/vid_49.mp4,"['Closing Eyes', 'Curling Upper Lip']"
 na/vid_50.mp4,"['Lips Pressed Together', 'Closing Eyes']"
 na/vid_51.mp4,"['Closing Eyes', 'Head Turned Away']"
@@ -55,15 +55,15 @@ na/vid_54.mp4,['Head Turned Away']
 na/vid_55.mp4,['Squinting']
 na/vid_56.mp4,"['Wrinkled nose', 'Raised chin']"
 na/vid_57.mp4,['Wrinkled nose']
-na/vid_58.mp4,['Smiling']
-na/vid_59.mp4,"['Curling Upper Lip', 'Smiling']"
+na/vid_58.mp4,"['Smiling', 'Wrinkled nose' ]"
+na/vid_59.mp4,"['Curling Upper Lip']"
 na/vid_60.mp4,"['Curling Upper Lip', 'Wrinkled nose']"
-na/vid_61.mp4,['Arms Crossed']
+na/vid_61.mp4,"['Arms Crossed', 'Downturned lips']"
 na/vid_62.mp4,['Closing Eyes']
-na/vid_63.mp4,"['Raised Eyebrows', 'Shaking Head']"
+na/vid_63.mp4,"['Raised Eyebrows']"
 na/vid_64.mp4,"['Raised Eyebrows', 'Shaking Head']"
 na/vid_65.mp4,"['Raised Eyebrows', 'Shaking Head', 'Curling Upper Lip']"
-na/vid_66.mp4,"['Eyebrows Pushed Together', 'Snarl']"
+na/vid_66.mp4,"['Eyebrows Pushed Together', 'Snarl', 'Wrinkled nose']"
 na/vid_67.mp4,['Snarl']
 na/vid_68.mp4,['Raised Eyebrows']
 na/vid_69.mp4,"['Snarl', 'Wrinkled nose']"
@@ -71,7 +71,7 @@ na/vid_70.mp4,"['Shaking Head', 'Raised Eyebrows']"
 na/vid_72.mp4,"['Raised Eyebrows', 'Wide Eyes']"
 na/vid_73.mp4,"['Shaking Head', 'Eyebrows Pushed Together', 'Curling Upper Lip']"
 na/vid_74.mp4,"['Eyebrows Pushed Together', 'Wrinkled nose']"
-na/vid_75.mp4,"['Raised Eyebrows', 'Squinting']"
+na/vid_75.mp4,['Raised Eyebrows']
 na/vid_76.mp4,['Curling Upper Lip']
 na/vid_77.mp4,['Eyebrows Pushed Together']
 na/vid_78.mp4,['Raised Eyebrows']
