@@ -23,11 +23,11 @@ def create_timeseries(df: DataFrame):
         if (len(X_group) >= frame_limit):
             for i in range(0, math.floor(len(X_group)/25)):
                 splitted_group = X_group[i * 25: min(len(X_group), i * 25 + 50)]
-                X_list.append(splitted_group.drop(columns=['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success', 'gender', 'talking'], axis=1).values)
+                X_list.append(splitted_group.drop(columns=['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success'], axis=1).values)
                 Y_list.append(X_group['emotion'].iloc[0])
         else:
             # TODO: separate video file name, frame and face and store it in a list (video_info_list)
-            X_list.append(X_group.drop(columns=['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success', 'gender', 'talking'], axis=1).values)
+            X_list.append(X_group.drop(columns=['frame', 'face_id', 'culture', 'filename', 'emotion', 'confidence','success'], axis=1).values)
             Y_list.append(X_group['emotion'].iloc[0]) 
     return X_list, Y_list
 
