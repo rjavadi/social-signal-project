@@ -11,6 +11,13 @@ deep_networks_classification/test_result.csv
 .idea/csv-plugin.xml
 *.xml
 .ipynb_checkpoints
-preprocessing/plots/p_after_voting_heatmap.png
+preprocessing/plots/*.png
 .idea
+multi_label_classification/multi_label_classification_voting.ipynb
+# multi_label_classification/multi_label_knn_emoji.ipynb
+multi_label_classification/yeast.py
 
+eldereact/elder_test_dataset.csv
+eldereact/elder_train_dataset.csv
+eldereact/test_labels.txt
+eldereact/train_labels.txt

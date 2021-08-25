@@ -1,0 +1,11 @@
+NA: 
+na/vid_33
+vid_42 to vid_49
+vid_50 to vid_55
+vid_57 to vid_60
+
+Persian:
+vid_9
+vid_17
+vid_18
+vid_54.mp4
